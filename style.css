@@ -1,0 +1,111 @@
+body {
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: orangered;
+  color: white;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: orange;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+#difficulty-selection-container,
+#answer-container,
+#explanation-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#difficulty-selection label {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#difficulty-selection input[type="radio"] {
+  margin-right: 10px;
+}
+
+#problem-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#user-answer {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid orange;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: darkorange; /* Darker shade for hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+#feedbackElement {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#explanation-container p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.score-container {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #666;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
